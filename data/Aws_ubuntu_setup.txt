@@ -1,0 +1,43 @@
+﻿Amazon Ubuntu setup
+
+1. instance create
+	.edit inbound rule to anywhere
+	.create keypair
+		.download pem file
+		.create ppk file from pem file by using putty-gen
+	.save public domain or ip address
+2. set up instance
+	.mc install 
+		cmd:   "sudo apt install mc"
+		*If dont work, next please try input below cmd*
+			sudo apt-get remove mc
+			sudo add-apt-repository ppa:eugenesan/ppa
+			sudo apt-get update
+			sudo apt-get install mc
+
+	.xampp download and install
+		download cmd: "wget https://www.apachefriends.org/xampp-files/7.1.9/xampp-linux-x64-7.1.9-0-installer.run"
+		install cmd:  "sudo chmod +x xampp-linux-x64-7.1.9-0-installer.run"
+			   "sudo ./xampp-linux-x64-7.1.9-0-installer.run"
+	.phpMyAdmin access permission update
+		/opt/lampp/etc/extra/httpd-xampp.conf file -> "require all granted"
+	.restart xampp cmd "/opt/lampp/lampp restart"
+
+At this moment default public directory path :  /opt/lampp/htdocs/
+Edit default directory access permission cmd :  "chown -R ubuntu:ubuntu /opt/lampp/htdocs"
+
+
+//Root directory changing
+- edit file: /opt/lampp/etc/ httpd.conf 
+- Change lines
+
+	From: DocumentRoot "/opt/lampp/lampp/htdocs" -> DocumentRoot "/home/ubuntu"
+	From: <Directory "/opt/lampp/lampp/htdocs"> ->  <Directory "/home/ubuntu">
+
+	From: User daemon -> User ubuntu 
+	From: Group daemon -> Group ubuntu 
+
+ * User and Group should be changed current user and group (My case user and group is "ubuntu"
+https://askubuntu.com/questions/64095/change-xampps-htdocs-web-root-folder-to-another-one
+
+- phpmyadmin path : http://ip or hostname/phpmyadmin

@@ -1,0 +1,9 @@
+* * * * * (sleep 15 && wget -O - -q -t 1 http://localhost/Qwork/api/notification/sendNotification) & (sleep 30 && wget -O - -q -t 1 http://localhost/Qwork/api/notification/sendNotification) & (sleep 45 && wget -O - -q -t 1 http://localhost/Qwork/api/notification/sendNotification) & (sleep 60 && wget -O - -q -t 1 http://localhost/Qwork/api/notification/sendNotification) 
+
+//Ubuntu
+root file path:  /var/spool/cron/crontab/root file
+crontab restart cmd: sudo service cron restart
+** root file should has new line at end **
+
+Or users can edit root file by "crontab -e"
+//sudo /etc/init.d/cron restart ? i can not sure

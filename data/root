@@ -1,0 +1,1 @@
+* * * * * (sleep 15 && wget -O - -q -t 1 http://localhost/Qwork/api/notification/sendNotification) & (sleep 30 && wget -O - -q -t 1 http://localhost/Qwork/api/notification/sendNotification) & (sleep 45 && wget -O - -q -t 1 http://localhost/Qwork/api/notification/sendNotification) & (sleep 60 && wget -O - -q -t 1 http://localhost/Qwork/api/notification/sendNotification)

@@ -1,0 +1,8 @@
+﻿Send mail by using mail() fucntion in php on Amazon EC2 
+- install sendmail
+sudo apt-get install sendmail
+- setting: php.ini (opt/lampp/etc/php.ini)
+search 'mail function'
+sendmail_path = "/usr/sbin/sendmail -t -i"
+- restart xampp
+/opt/lampp/lampp restart
