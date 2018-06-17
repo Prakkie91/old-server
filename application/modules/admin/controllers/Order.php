@@ -217,13 +217,25 @@ class Order extends Admin_Controller {
         $pre_records = $this->records->get_where($where);
 
         $points = array();
+        $sub_points = array();
+        $created_at = 0;
         foreach ($pre_records as $pr) {
-            $points[] = $pr->lat . ',' . $pr->lng;
+            if ($pr->created_at - $created_at > 5 * 60) { // 5min
+                if (count($sub_points) > 0) {
+                    $points[] = $sub_points;
+                    $sub_points = array();
+                }
+            }
+
+            $sub_points[] = $pr->lat . ',' . $pr->lng;
+            $created_at = $pr->created_at;
         }
 
-        $polyline['points'] = $points;
+        foreach ($points as $point) {
+            $polyline['points'] = $point;
 
-        $this->googlemaps->add_polyline($polyline);
+            $this->googlemaps->add_polyline($polyline);
+        }
 
         $this->mTitle = 'Record ('. $record_id .')';
         $this->mViewData['map'] = $this->googlemaps->create_map();
@@ -234,7 +246,6 @@ class Order extends Admin_Controller {
         $crud = $this->generate_crud('records');
         $crud->columns('id', 'user_id', 'order_id', 'lat', 'lng', 'speed', 'distance', 'time');
 
-        //$crud->add_action('View Map', base_url().'/assets/images/point.png', 'admin/user/reset_password', '');
         $crud->add_action('View Map', '', 'admin/order/record_map', 'fa fa-map-marker fa-2x');
 
         $order = $this->orders->get($order_id);

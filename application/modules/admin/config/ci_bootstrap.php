@@ -83,7 +83,7 @@ $config['ci_bootstrap'] = array(
 				'Create'        => 'order/create'
 			)
 		),
-		'panel' => array(
+		/*'panel' => array(
 			'name'		=> 'Admin Panel',
 			'url'		=> 'panel',
 			'icon'		=> 'fa fa-cog',
@@ -100,7 +100,7 @@ $config['ci_bootstrap'] = array(
 			'children'  => array(
 				'Database Versions'		=> 'util/list_db',
 			)
-		),
+		),*/
 		'logout' => array(
 			'name'		=> 'Sign Out',
 			'url'		=> 'panel/logout',

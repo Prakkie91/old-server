@@ -21,6 +21,20 @@ class Order extends API_Controller {
         ));
     }
 
+    public function getAllSameTypeOrdersWithUserId_post() {
+        $user_id = $this->post('user_id');
+
+        $car_type_id = $this->users->get($user_id)->car_type_id;
+        $where = array(
+            'car_type_id' => $car_type_id
+        );
+
+        $this->response(array(
+            'status' => 1,
+            'data' => $this->orders->get_where($where)
+        ));
+    }
+
     public function getAccountEarnInfo_post() {
         $user_id = $this->post('user_id');
 
