@@ -59,6 +59,17 @@ class Order extends API_Controller {
         ));
     }
 
+    public function getAllSameTypeRegionsWithUserId_post() {
+        $user_id = $this->post('user_id');
+        $car_type_id = $this->users->get($user_id)->car_type_id;
+        $regions = $this->regions->getAllSameTypeRegionsWithUserId($car_type_id);
+
+        $this->response(array(
+            'status' => 1,
+            'data' => $regions
+        ));
+    }
+
     public function updateOrderStatus_post() {
         $status = $this->post('status');
         $user_id = $this->post('user_id');

@@ -21,45 +21,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/api/controllers/User.php">
+      <file leaf-file-name="Order.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/api/controllers/Order.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="476">
+              <caret line="64" column="79" selection-start-line="64" selection-start-column="79" selection-end-line="64" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ad_region_model.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/models/Ad_region_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="124" selection-start-line="11" selection-start-column="124" selection-end-line="11" selection-end-column="124" />
               <folding>
-                <marker date="1528861102843" expanded="true" signature="34438:35462" ph="SELECT SUM(r... orders" />
-                <marker date="1528861102843" expanded="true" signature="34494:34532" ph="SELECT usern... users" />
-                <marker date="1528861102843" expanded="true" signature="34587:34619" ph="SELECT id FR... users" />
-                <marker date="1528861102843" expanded="true" signature="34672:34757" ph="SELECT COUNT... orders" />
-                <marker date="1528861102843" expanded="true" signature="34789:34874" ph="SELECT COUNT... orders" />
-                <marker date="1528861102843" expanded="true" signature="34906:34991" ph="SELECT COUNT... orders" />
-                <marker date="1528861102843" expanded="true" signature="35023:35108" ph="SELECT COUNT... orders" />
-                <marker date="1528861102843" expanded="true" signature="35140:35225" ph="SELECT COUNT... orders" />
-                <marker date="1528861102843" expanded="true" signature="35257:35366" ph="SELECT COUNT... orders" />
-                <marker date="1528861102843" expanded="true" signature="36088:36267" ph="SELECT SUM(r... orders" />
-                <marker date="1528861102843" expanded="true" signature="36180:36251" ph="SELECT id FR... users" />
-                <marker date="1528861102843" expanded="true" signature="36469:36635" ph="SELECT COUNT... " />
+                <marker date="1529369686084" expanded="true" signature="213:256" ph="SELECT * FRO... ad_regions" />
+                <marker date="1529369686084" expanded="true" signature="213:326" ph="SELECT * FRO... ad_regions" />
+                <marker date="1529369686084" expanded="true" signature="257:304" ph="SELECT order... orders" />
+                <marker date="1529369686084" expanded="true" signature="257:305" ph="SELECT order... orders" />
+                <marker date="1529369686084" expanded="true" signature="257:310" ph="SELECT order... orders" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Order.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/api/controllers/Order.php">
+      <file leaf-file-name="User_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/User_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Order.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/modules/admin/controllers/Order.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="230" column="42" selection-start-line="230" selection-start-column="42" selection-end-line="230" selection-end-column="42" />
-              <folding />
+            <state relative-caret-position="204">
+              <caret line="12" column="13" selection-start-line="8" selection-start-column="12" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <marker date="1528289892932" expanded="true" signature="162:197" ph="SELECT * FRO... car_types" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,8 +68,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/application/modules/admin/config/ci_bootstrap.php" />
-        <option value="$PROJECT_DIR$/application/modules/api/controllers/Order.php" />
         <option value="$PROJECT_DIR$/application/modules/admin/controllers/Order.php" />
+        <option value="$PROJECT_DIR$/application/modules/api/controllers/Order.php" />
+        <option value="$PROJECT_DIR$/application/models/Ad_region_model.php" />
       </list>
     </option>
   </component>
@@ -123,6 +119,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,14 +266,31 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DriverTrack_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DriverTrack_server" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Eternity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MiFolio" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -296,15 +310,18 @@
       <workItem from="1529113268802" duration="13000" />
       <workItem from="1529113372856" duration="602000" />
       <workItem from="1529211291477" duration="1213000" />
-      <workItem from="1529238301876" duration="2431000" />
+      <workItem from="1529238301876" duration="3027000" />
+      <workItem from="1529283157827" duration="1027000" />
+      <workItem from="1529335237307" duration="1516000" />
+      <workItem from="1529369431148" duration="395000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8311000" />
+    <option name="totallyTimeSpent" value="11845000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -344,24 +361,80 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/modules/api/controllers/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Ad_region_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="51" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="51" />
+          <folding>
+            <marker date="1529369686084" expanded="true" signature="213:256" ph="SELECT * FRO... ad_regions" />
+            <marker date="1529369686084" expanded="true" signature="213:326" ph="SELECT * FRO... ad_regions" />
+            <marker date="1529369686084" expanded="true" signature="257:304" ph="SELECT order... orders" />
+            <marker date="1529369686084" expanded="true" signature="257:305" ph="SELECT order... orders" />
+            <marker date="1529369686084" expanded="true" signature="257:310" ph="SELECT order... orders" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/User_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" selection-start-line="8" selection-start-column="12" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <marker date="1528289892932" expanded="true" signature="162:197" ph="SELECT * FRO... car_types" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/api/controllers/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1528861102843" expanded="true" signature="34438:35462" ph="SELECT SUM(r... orders" />
-            <marker date="1528861102843" expanded="true" signature="34494:34532" ph="SELECT usern... users" />
-            <marker date="1528861102843" expanded="true" signature="34587:34619" ph="SELECT id FR... users" />
-            <marker date="1528861102843" expanded="true" signature="34672:34757" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="34789:34874" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="34906:34991" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35023:35108" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35140:35225" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35257:35366" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="36088:36267" ph="SELECT SUM(r... orders" />
-            <marker date="1528861102843" expanded="true" signature="36180:36251" ph="SELECT id FR... users" />
-            <marker date="1528861102843" expanded="true" signature="36469:36635" ph="SELECT COUNT... " />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/api/controllers/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/api/controllers/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/api/controllers/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/admin/controllers/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/api/controllers/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -385,20 +458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1528861102843" expanded="true" signature="34438:35462" ph="SELECT SUM(r... orders" />
-            <marker date="1528861102843" expanded="true" signature="34494:34532" ph="SELECT usern... users" />
-            <marker date="1528861102843" expanded="true" signature="34587:34619" ph="SELECT id FR... users" />
-            <marker date="1528861102843" expanded="true" signature="34672:34757" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="34789:34874" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="34906:34991" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35023:35108" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35140:35225" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35257:35366" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="36088:36267" ph="SELECT SUM(r... orders" />
-            <marker date="1528861102843" expanded="true" signature="36180:36251" ph="SELECT id FR... users" />
-            <marker date="1528861102843" expanded="true" signature="36469:36635" ph="SELECT COUNT... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -422,20 +481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1528861102843" expanded="true" signature="34438:35462" ph="SELECT SUM(r... orders" />
-            <marker date="1528861102843" expanded="true" signature="34494:34532" ph="SELECT usern... users" />
-            <marker date="1528861102843" expanded="true" signature="34587:34619" ph="SELECT id FR... users" />
-            <marker date="1528861102843" expanded="true" signature="34672:34757" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="34789:34874" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="34906:34991" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35023:35108" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35140:35225" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35257:35366" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="36088:36267" ph="SELECT SUM(r... orders" />
-            <marker date="1528861102843" expanded="true" signature="36180:36251" ph="SELECT id FR... users" />
-            <marker date="1528861102843" expanded="true" signature="36469:36635" ph="SELECT COUNT... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -459,20 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1528861102843" expanded="true" signature="34438:35462" ph="SELECT SUM(r... orders" />
-            <marker date="1528861102843" expanded="true" signature="34494:34532" ph="SELECT usern... users" />
-            <marker date="1528861102843" expanded="true" signature="34587:34619" ph="SELECT id FR... users" />
-            <marker date="1528861102843" expanded="true" signature="34672:34757" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="34789:34874" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="34906:34991" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35023:35108" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35140:35225" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35257:35366" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="36088:36267" ph="SELECT SUM(r... orders" />
-            <marker date="1528861102843" expanded="true" signature="36180:36251" ph="SELECT id FR... users" />
-            <marker date="1528861102843" expanded="true" signature="36469:36635" ph="SELECT COUNT... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -488,20 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1528861102843" expanded="true" signature="34438:35462" ph="SELECT SUM(r... orders" />
-            <marker date="1528861102843" expanded="true" signature="34494:34532" ph="SELECT usern... users" />
-            <marker date="1528861102843" expanded="true" signature="34587:34619" ph="SELECT id FR... users" />
-            <marker date="1528861102843" expanded="true" signature="34672:34757" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="34789:34874" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="34906:34991" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35023:35108" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35140:35225" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35257:35366" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="36088:36267" ph="SELECT SUM(r... orders" />
-            <marker date="1528861102843" expanded="true" signature="36180:36251" ph="SELECT id FR... users" />
-            <marker date="1528861102843" expanded="true" signature="36469:36635" ph="SELECT COUNT... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -525,20 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1528861102843" expanded="true" signature="34438:35462" ph="SELECT SUM(r... orders" />
-            <marker date="1528861102843" expanded="true" signature="34494:34532" ph="SELECT usern... users" />
-            <marker date="1528861102843" expanded="true" signature="34587:34619" ph="SELECT id FR... users" />
-            <marker date="1528861102843" expanded="true" signature="34672:34757" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="34789:34874" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="34906:34991" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35023:35108" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35140:35225" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35257:35366" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="36088:36267" ph="SELECT SUM(r... orders" />
-            <marker date="1528861102843" expanded="true" signature="36180:36251" ph="SELECT id FR... users" />
-            <marker date="1528861102843" expanded="true" signature="36469:36635" ph="SELECT COUNT... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -556,40 +559,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/admin/controllers/Order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="230" column="42" selection-start-line="230" selection-start-column="42" selection-end-line="230" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/api/controllers/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-2193">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/User_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" selection-start-line="8" selection-start-column="12" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <marker date="1528861102843" expanded="true" signature="34438:35462" ph="SELECT SUM(r... orders" />
-            <marker date="1528861102843" expanded="true" signature="34494:34532" ph="SELECT usern... users" />
-            <marker date="1528861102843" expanded="true" signature="34587:34619" ph="SELECT id FR... users" />
-            <marker date="1528861102843" expanded="true" signature="34672:34757" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="34789:34874" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="34906:34991" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35023:35108" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35140:35225" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="35257:35366" ph="SELECT COUNT... orders" />
-            <marker date="1528861102843" expanded="true" signature="36088:36267" ph="SELECT SUM(r... orders" />
-            <marker date="1528861102843" expanded="true" signature="36180:36251" ph="SELECT id FR... users" />
-            <marker date="1528861102843" expanded="true" signature="36469:36635" ph="SELECT COUNT... " />
+            <marker date="1528289892932" expanded="true" signature="162:197" ph="SELECT * FRO... car_types" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/api/controllers/Order.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        <state relative-caret-position="476">
+          <caret line="64" column="79" selection-start-line="64" selection-start-column="79" selection-end-line="64" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/admin/controllers/Order.php">
+    <entry file="file://$PROJECT_DIR$/application/models/Ad_region_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="230" column="42" selection-start-line="230" selection-start-column="42" selection-end-line="230" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="187">
+          <caret line="11" column="124" selection-start-line="11" selection-start-column="124" selection-end-line="11" selection-end-column="124" />
+          <folding>
+            <marker date="1529369686084" expanded="true" signature="213:256" ph="SELECT * FRO... ad_regions" />
+            <marker date="1529369686084" expanded="true" signature="213:326" ph="SELECT * FRO... ad_regions" />
+            <marker date="1529369686084" expanded="true" signature="257:304" ph="SELECT order... orders" />
+            <marker date="1529369686084" expanded="true" signature="257:305" ph="SELECT order... orders" />
+            <marker date="1529369686084" expanded="true" signature="257:310" ph="SELECT order... orders" />
+          </folding>
         </state>
       </provider>
     </entry>
