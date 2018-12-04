@@ -9,6 +9,7 @@ class User extends API_Controller {
 		parent::__construct();
 		$this->load->model('User_model', 'users');
 		$this->load->model('Order_model', 'orders');
+        $this->load->model('Api_key_model', 'apikeys');
 	}
 
 	public function getAllUsers_post()
@@ -376,6 +377,16 @@ class User extends API_Controller {
         }
 	}
 
+	public function logout_post() {
+	    $ake = $this->post('ak');
+
+        $this->apikeys->update_field('1', 'key', $ake);
+        $this->response(array(
+            'status' => 1,
+            'data' => 'success'
+        ));
+    }
+
 	public function login_post()
 	{
 		$email = $this->post('email');
@@ -693,12 +704,12 @@ class User extends API_Controller {
 		$this->response($result);
 	}
 
-	public function logout_post() {
+	/*public function logout_post() {
 		$userid = $this->post('userid');
 		$this->users->update($userid, array('one_id_ios' => ''));
 		$this->users->update($userid, array('one_id_android' => ''));
 		$this->response(array('status'=>1));
-	}
+	}*/
 
 	/*public function forgot_password_email_post() {
 		$email = $this->post('email');

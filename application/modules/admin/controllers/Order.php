@@ -196,7 +196,7 @@ class Order extends Admin_Controller {
         $this->render('map/map');
     }
 
-    public function record_map($record_id) {
+    /*public function record_map($record_id) {
         $record = $this->records->get($record_id);
 
         $this->load->library('googlemaps');
@@ -236,6 +236,40 @@ class Order extends Admin_Controller {
 
             $this->googlemaps->add_polyline($polyline);
         }
+
+        $this->mTitle = 'Record ('. $record_id .')';
+        $this->mViewData['map'] = $this->googlemaps->create_map();
+        $this->render('map/map');
+    }*/
+
+    public function record_map($record_id) {
+        $record = $this->records->get($record_id);
+
+        $this->load->library('googlemaps');
+        $config['zoom'] = '17';
+        $config['center'] = $record->lat . ',' . $record->lng;
+
+        $this->googlemaps->initialize($config);
+
+        $marker['position'] = $record->lat . ', ' . $record->lng;
+        $marker['infowindow_content'] = "Current Location";
+        $this->googlemaps->add_marker($marker);
+
+        $where = array(
+            'user_id' => $record->user_id,
+            'order_id' => $record->order_id,
+            'id <=' => $record_id
+        );
+        $pre_records = $this->records->get_where($where);
+
+        $points = array();
+        foreach ($pre_records as $pr) {
+            $points[] = $pr->lat . ',' . $pr->lng;
+        }
+
+        $polyline['points'] = $points;
+
+        $this->googlemaps->add_polyline($polyline);
 
         $this->mTitle = 'Record ('. $record_id .')';
         $this->mViewData['map'] = $this->googlemaps->create_map();
